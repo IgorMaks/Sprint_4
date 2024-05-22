@@ -27,9 +27,11 @@ public class ImportantQuestions {
     public void setup() {
         // Настройки Хрома
         ChromeOptions options = new ChromeOptions();
-        //options.addArguments("--no-sandbox", "--headless", "--disable-dev-shm-usage");
+       //options.addArguments("--no-sandbox", "--headless", "--disable-dev-shm-usage");
         // Драйвер для браузера Chrome
         driver = new ChromeDriver(options);
+        // Драйвер для браузера Firefox
+        // driver = new FirefoxDriver(options);
     }
 
     @Parameterized.Parameters
